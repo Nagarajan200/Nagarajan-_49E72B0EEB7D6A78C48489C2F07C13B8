@@ -1,12 +1,15 @@
-# Python program to check if year is a leap year or not
 
-#year = 2000
+#Here's a Python Program
 
-# To get year (integer input) from the user
-year = int(input("Enter a year: "))
-if (year % 400 == 0) and (year % 100 == 0):
-    print("{0} is a leap year".format(year))
-elif (year % 4 ==0) and (year % 100 != 0):
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))￼Not
+
+def linear_search_product(product_list, target_product):
+    indices = []
+    for i, product in enumerate(product_list):
+        if product == target_product:
+            indices.append(i)
+    return indices
+products = ["Apple", "Banana", "Orange", "Apple", "Grapes", "Apple"]
+target = "Apple"
+
+result = linear_search_product(products, target)
+print(result)
